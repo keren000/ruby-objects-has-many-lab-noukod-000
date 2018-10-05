@@ -1,61 +1,61 @@
-class Post 
+class Post
 
 
-  attr_accessor :title, :author 
+  attr_accessor :title, :author
 
 
-  @@all = [] 
+  @@all = []
 
 
- 
 
 
-  def initialize(title) 
+
+  def initialize(title)
 
 
-    @title = title 
+    @title = title
 
 
-    @@all << self 
+    @@all << self
 
 
-  end 
+  end
 
 
- 
 
 
-  def self.all 
+
+  def self.all
 
 
-    @@all 
+    @@all
 
 
-  end 
+  end
 
 
- 
 
 
-  def author_name 
+
+  def author_name
 
 
-    if author == nil 
+    if author == nil
 
 
-      nil 
+      nil
 
 
-    else  
+    else
 
 
-      self.author.name 
+      self.author.name
 
 
-    end 
+    end
 
 
-  end 
+  end
 
 
 end 
